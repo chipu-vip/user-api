@@ -1,5 +1,5 @@
 ## System requirement
--  >= PHP 7.1
+- Greater than or PHP 7.1
 ## Install
 
 -   composer install
