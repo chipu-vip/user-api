@@ -1,9 +1,11 @@
 ## Install
 
--   composer install
+-   docker run --rm -v \$(pwd):/app composer install
 -   docker-compose up
 
 ## run migration script
+
+### open new terminal
 
 -   docker-compose exec app php artisan migrate:refresh --seed
 

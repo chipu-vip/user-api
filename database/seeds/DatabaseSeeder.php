@@ -1,4 +1,5 @@
 <?php
+
 use Illuminate\Database\Seeder;
 use App\Database\Seeds\UsersTableSeeder;
 use App\Database\Seeds\ContentsTableSeeder;
