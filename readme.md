@@ -1,9 +1,6 @@
-## System requirement
-- Greater than or PHP 7.1
 ## Install
 
--   docker run --rm -v \$(pwd):/app composer install
--   docker-compose up
+-   docker-compose up -d --force-recreate --build && docker-compose up
 
 ## run migration script
 
@@ -19,6 +16,8 @@
 ## Web access
 
 -   http://localhost:8000
+
+### if cannot run on localhost, try docker-machine ip and replace localhost to ip
 
 ## Api access
 
