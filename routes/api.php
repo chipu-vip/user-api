@@ -12,5 +12,8 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::post('authenticate', 'UserApiController@authenticate');
 
-Route::resource('contents', 'ContentController');
+Route::group(['middleware' => ['jwt.verify']], function() {
+    Route::get('/contents','ContentController@index');
+});
